@@ -1,0 +1,49 @@
+@import "/pages/movies/movie/movie-template.wxss";
+/* 电影列表部分*/
+.movies-list {
+    display: flex;
+    flex-direction:column;
+    font-size: 24rpx;    
+    background-color: #fff;
+    padding-bottom: 20rpx;
+    margin-bottom: 20rpx;    
+}
+
+.movies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90rpx;
+}
+.showing {
+    color: #666;
+}
+.more-movies {
+    color: #3F65B2;
+    padding-right: 30rpx;
+}
+.more-movies image {
+    margin-left: 10rpx;
+    width: 9rpx;
+    height: 16rpx;
+}
+/*movies部分*/
+.movies {
+    display: flex;
+    padding-left: 20rpx;
+}
+.movie-container {
+    margin-right: 54rpx;
+}
+.movie-container:last-child {
+    margin-right: 0;
+}
+
+/*.movie {
+    display: flex;
+    flex-direction:column;
+    margin-right: 54rpx;
+}
+.movie:nth-child(3n){
+    margin-right: 0;
+}*/

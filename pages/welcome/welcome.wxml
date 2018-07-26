@@ -1,0 +1,7 @@
+<view class="container">
+  <image src="/images/avatar/1.png" class=".user-avatar"></image>
+  <text class="hello">Hello，飞蛾</text>
+  <view class="btn" bindtap="onTap">
+    <text>开启小程序之旅</text>
+  </view>
+</view>

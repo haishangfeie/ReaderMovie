@@ -1,0 +1,15 @@
+/*星级评价组件*/
+.star image{
+    width: 17rpx;
+    height: 17rpx;
+    padding-right: 3rpx;
+}
+.star-score {
+    margin-left: 24rpx;
+    font-size: 20rpx;
+    color: #1F3463;
+}
+.star image,
+.star-score {
+    vertical-align: middle;
+}

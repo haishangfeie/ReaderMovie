@@ -1,0 +1,29 @@
+/* pages/movies/movies-grid/movies-grid-template.wxss */
+@import "/pages/movies/movie/movie-template.wxss";
+.movies-grid-container {
+    display: flex;
+    flex-wrap:wrap;
+    padding: 20rpx 30rpx;
+}
+
+.movie-container {
+    margin-right: 30rpx;
+    margin-bottom: 10rpx;
+}
+.movie-container:nth-child(3n) {
+    margin-right: 0;
+}
+
+/*使用scroll-view不支持flex，修改的，但修改后又不支持组件内下拉刷新了，所以放弃了scroll-view*/
+/*.movies-grid-container {
+    height: 1300rpx;
+    padding: 20rpx 30rpx;
+}
+
+.movie-container {
+    float:left;    
+    margin-right: 30rpx;
+}
+.movie-container:nth-child(3n) {
+    margin-right: 0;
+}*/

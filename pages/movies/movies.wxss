@@ -1,0 +1,37 @@
+@import "/pages/movies/movies-list/movies-list-template.wxss";
+@import "/pages/movies/movies-grid/movies-grid-template.wxss";
+
+page {
+    background: #f2f2f2;
+}
+/* 搜索组件样式*/
+.seach-container {
+    background-color: #f2f2f2;
+    height: 80rpx;
+    width: 100%;
+    display: flex;
+}
+.search-img {
+    margin:auto 0 auto 20rpx;
+}
+.placeholder {
+    color: #d1d1d1;
+    font-size: 14px;
+    margin-left: 20rpx;
+}
+.seach-container input {
+    height: 100%;
+    width: 600rpx;
+    margin-left: 20px;
+    font-size: 28rpx;
+}
+.xx-img {
+    height: 30rpx;
+    width: 30rpx;
+    margin:auto 0 auto 10rpx;
+}
+/* 搜索结果界面*/
+.search-panel {
+    position: absolute;
+    top: 80rpx;
+}

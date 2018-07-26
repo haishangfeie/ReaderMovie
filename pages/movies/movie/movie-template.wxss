@@ -1,0 +1,17 @@
+@import "/pages/movies/stars/stars-template.wxss";
+/* 电影组件部分*/
+.movie {
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 10rpx;
+}
+.movie-cover {
+    width: 200rpx;
+    height: 270rpx;
+}
+.movie-name {
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #666;
+    font-size:24rpx;
+}

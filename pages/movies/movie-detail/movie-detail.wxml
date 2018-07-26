@@ -1,0 +1,56 @@
+<!-- pages/movies/movie-detail/movie-detail.wxml -->
+<import src="../stars/stars-template.wxml" />
+<view class="movie-detail-header">
+  <image src="{{movieImg}}" mode="aspectFill" class="head-img"></image>
+  <view class="movie-detail-header-contnet" catchtap="viewMoviePostImg" data-src="{{movieImg}}">
+    <text class="movie-detail-header-title">{{originalTitle}}</text>
+    <view class="site-year">
+      <text>{{country}}</text>
+      <text class="dot">.</text>
+      <text>{{year}}</text>
+    </view>
+    <view class="like-comment">
+      <text class="red">{{wishCount}}</text>
+      <text class="mr_40">人喜欢</text>
+      <text class="red">{{commentCount}}</text>
+      <text>条评论</text>
+    </view>
+  </view>
+  <image src="{{movieImg}}" class="movie-detail-header-cover" catchtap="viewMoviePostImg" data-src="{{movieImg}}" data-casts="{{castsInfo}}" />
+</view>
+<view class="movies-detail-info">
+  <text class="movie-name">{{title}}</text>
+  <view class="movie-detail-info-group">
+    <text class="movies-detail-info-key">评分</text>
+    <view class="movie-detail-info-val-container">
+      <template is="starsTemplate" data="{{stars,average}}"></template>
+    </view>
+  </view>
+  <view class="movie-detail-info-group">
+    <text class="movies-detail-info-key">导演</text>
+    <text class="movie-detail-info-val">{{director.name}}</text>
+  </view>
+  <view class="movie-detail-info-group">
+    <text class="movies-detail-info-key">影人</text>
+    <text class="movie-detail-info-val">{{casts}}</text>
+  </view>
+  <view class="movie-detail-info-group">
+    <text class="movies-detail-info-key">类型</text>
+    <text class="movie-detail-info-val">{{generes}}</text>
+  </view>
+</view>
+<view class="movie-detail-container">
+  <text class="movie-detail-container-title">剧情简介</text>
+  <text class="movie-detail-container-content">{{summary}}</text>
+</view>
+<view class="movie-detail-container">
+  <text class="movie-detail-container-title">影人</text>
+  <scroll-view scroll-x="{{true}}" class="movie-detail-container-img">
+    <block wx:for="{{castsInfo}}" wx:key="{{}}">
+      <view class="cast-container">
+          <image src="{{item.avatars}}"></image>
+          <text>{{item.name}}</text>
+      </view>
+    </block>
+  </scroll-view>
+</view>

@@ -1,0 +1,124 @@
+/* pages/movies/movie-detail/movie-detail.wxss */
+@import "../stars/stars-template.wxss";
+.movie-detail-header {
+    position: relative;
+    width: 100%;
+    height: 320rpx;
+    display: flex;
+    flex-direction:column;
+}
+.head-img {
+    position: absolute;
+    width: 100%;
+    height: 320rpx;
+    -webkit-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+.movie-detail-header-contnet {
+    position: relative;
+    z-index:10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 320rpx;
+    margin-left: 40rpx;
+}
+.movie-detail-header-title {
+    margin-top: 50rpx ;       
+    color: #fff;
+    font-size: 36rpx;
+    margin-bottom: 40rpx;
+    
+}
+.site-year text{
+    color: #fff;
+    font-size:24rpx;
+}
+.like-comment {
+    margin-top: 30rpx;
+}
+.like-comment text{
+    font-size: 26rpx;
+    color: #5F595A;
+    font-weight: 550;
+}
+.like-comment .red {
+    color: #D81744;
+    margin-right: 20rpx;
+}
+.mr_40 {
+    margin-right: 40rpx;
+}
+.movie-detail-header-cover {
+    position: absolute;
+    bottom: -80rpx;
+    right: 25rpx;
+    width: 174rpx;
+    height: 238rpx;
+    z-index: 20;
+}
+.movies-detail-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40rpx;
+    padding-bottom: 40rpx;
+}
+.movie-name {
+    color: #666;
+    margin-top: 48rpx;
+    font-size: 22rpx;
+    font-weight: 700;
+    margin-bottom: 50rpx;
+}
+.movie-detail-info-group {
+    display: flex;
+    margin-bottom: 20rpx;
+    align-items: center;
+}
+.movies-detail-info-key {
+    font-size: 24rpx;
+    line-height: 24rpx;
+    margin-right: 33rpx;
+    color: #999;
+}
+.movie-detail-info-val-container {
+    margin-top: -10rpx;
+}
+.movie-detail-info-val {
+    color: #666;
+}
+.movie-detail-container {
+    display: flex;
+    flex-direction:column;
+    border-top: 1px solid #ccc;
+    padding-left: 40rpx;
+    padding-right: 60rpx;
+    font-size: 20rpx;    
+    padding-bottom: 55rpx;
+}
+.movie-detail-container-title {
+    margin-top: 55rpx;
+    margin-bottom: 33rpx;
+    font-weight: 500;
+    color: #999;
+}
+.movie-detail-container-content {
+    color: #666;
+}
+ .movie-detail-container-img {
+    width: 100%;
+    white-space: nowrap;
+} 
+ .cast-container {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 50rpx;
+    margin-right: 40rpx;
+    width: 171rpx;
+} 
+.movie-detail-container-img image {
+    width: 171rpx;
+    height: 210rpx;
+}
+
